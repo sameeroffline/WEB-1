@@ -1,0 +1,14 @@
+.active{
+    color: blueviolet;
+}
+.menu-spacer {
+    flex:1 1 auto;
+}
+
+/* mat-sidenav-content{
+    display:block;
+} */
+
+mat-sidenav-container{
+    position: fixed;
+}

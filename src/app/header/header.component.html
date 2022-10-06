@@ -1,0 +1,47 @@
+<!---Isntall angular = ng add @angular/material --->
+<!---Install angular = npm i @angular/flex-layout--->
+<div style="height:100%;" class="full"> 
+    <mat-toolbar class="nav" >
+        <div fxShow="true" fxHide.gt-sm="true">
+          <button mat-icon-button color="primary" (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/wAPeTvxh_EwOisF8kMR2L2eOrIOzjfA5AjE28W5asyfGeH85glwrO6zyqL71dCC26R63chADTO7DLOjnqRoXXOAB8t2f4C3QnU6o0BA" alt="logo" height="50px" width="50px">
+        </div>
+        <a mat-button class="companyName" routerLink="home">
+          <span>Site name</span>
+        </a>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md="true" fxLayoutAlign="left">
+          
+          <a mat-button routerLink="home"    routerLinkActive="active">Home</a>
+          <a mat-button routerLink="about"   routerLinkActive="active">About</a>
+          <a mat-button routerLink="services" routerLinkActive="active">Services</a>
+          <a mat-button routerLink="contact"  routerLinkActive="active">Contact</a>
+          
+        </div>
+      </mat-toolbar>
+      <mat-sidenav-container fxFlexFill class="example-container">
+        <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+          <div fxLayout="column">
+            <a mat-button routerLink="home"    routerLinkActive="active">Home</a>
+            <a mat-button routerLink="about"   routerLinkActive="active">About</a>
+            <a mat-button routerLink="services" routerLinkActive="active">Services</a>
+            <a mat-button routerLink="contact"  routerLinkActive="active">Contact</a>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+
+          
+          <router-outlet></router-outlet>
+
+          <!-- <app-footer></app-footer> -->
+
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+
+
+    </div>

@@ -1,0 +1,64 @@
+.about{
+	cursor: pointer;
+	background-color:#D3D3D3;
+    /* background:linear-gradient(to right,#c0e5f0,#f0cbd6); */
+
+	color:  black;   /* about us section color */
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.about h1 {
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.about h2 {
+	opacity: .8;
+}
+.about span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin:auto;
+	border-radius:50%;  
+	font-size: 40px;
+	/* color: #ffffff; */
+	color: #c7a304;
+	/* opacity: 0.7; */
+	background-color: #F5FFFA;
+ 
+
+}
+.about-item:hover span{
+	/* opacity: 1;	 */
+	/* border: 3.5px solid rgb(255, 255, 255); */
+	border: 2.5px solid goldenrod;
+	font-size: 42px;
+	-webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+	-moz-transform: scale(1.1,1.1) rotate(360deg) ;
+	-o-transform: scale(1.1,1.1) rotate(360deg) ;
+	transform: scale(1.1,1.1) rotate(360deg) ;
+}
+.about-item:hover h2{
+	opacity: 1;
+	-webkit-transform: scale(1.1,1.1)  ;
+	-moz-transform: scale(1.1,1.1)  ;
+	-o-transform: scale(1.1,1.1)  ;
+	transform: scale(1.1,1.1) ;
+}
+.about .lead{
+	color: black; /* font color */
+	font-size: 14px;
+	font-weight:400;
+}
+
+
+ 
+
+
+
+
+
+
+
+
